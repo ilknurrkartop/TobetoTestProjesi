@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "326cddd4-3831-4958-9074-32a1f339a357",
+		"name": "register_tobeto_pair7",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32036547"
+	},
+	"item": [
+		{
+			"name": "Başarılı Kullanıcı Kaydı",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.tobeto.com"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://tobeto.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://tobeto.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"data\": {\n        \"username\": \"tobeto\",\n        \"email\": \"a@gmail.com\",\n        \"password\": \"tobeto123\",\n        \"name\": \"bürde\",\n        \"phone\": \"+905316855008\",\n        \"surname\": \"test\",\n        \"emailConfirmation\": true,\n        \"phoneConfirmation\": true,\n        \"registerType\": \"registerForm\",\n        \"approvalContrat\": [\n            40,\n            26,\n            22\n        ],\n        \"CaptchaValue\": \"03AFcWeA7eE7idSKk7CuVvbaLgNQfFUzz1t06dTeAONmCjULvhXY0-cR8wyUwPWuagcy_BGZhxsP6fk47Zx2NzU5ZDlcyAqqA-_0fOARI3K6-m1LXgA2lkq91vvHYcE2OXr3QGhiOOLd_9zgZ-PW8PE5GvIdmthv9kdKn2SSF9ntXveaxWWbLTvC_76Eb2KW_HirKyZqn-XrtmgAPZpwJz1tmkq35rt0ze3kAKrAukOC2vAjYe_NdKY96cr8SA8_PcV1o3m8aadZvs3WDxWopJ2HVGKuUZXOnSi3dswV-rRF0l6mAzi0lbQA0yG4ikYqcQMnA4OqriKPIGi02eTeSylpU3XkSWF3RMLVe31TpbOBFPLvpjREuBu0GSmLdpTKGj6962A1W3ZXkLJ-qMinSi-7eRZP-8BwA6ziJSJeNVI5-bgKSuuJta-CsNvaN5WXKRLwy7NF-0jHXWYwhqatg1O1mEoss1YQ6e9ApFwvmp1jcOJVpsX_DcURQxRD7KKAqiaSIF1X1v2_Pm3bh7odjzMpfQoZh_Dox5zXzcCfd8G9FPr69Ry1r1WxRVFr8QJg--mFAiuEcx4uhJFQmYe9QIYzr0EcNqMBVUeBT3NLC2XFh8N61jj_uUEmCbVsxFE6SXzKrUOS7MNn1sZtgxthdNpQTxBkzn4IWbrx0Io16t4HGJ_tGyaA9fJS0\"\n    }\n}"
+				},
+				"url": {
+					"raw": "https://api.tobeto.com/api/user/createWithForm",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tobeto",
+						"com"
+					],
+					"path": [
+						"api",
+						"user",
+						"createWithForm"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kayıtlı e-posta ile kayıt olma kontrolü",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Birden fazla hata ile kayıt olma kontrolü",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Geçersiz şifre ile kayıt olma kontrolü",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Şifre 6 karakterden oluşmalıdır",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "4ed6cd06-c74f-4712-a2fb-e8148df818c4",
+		"name": "Takvim Kontrolü",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25266754"
+	},
+	"item": [
+		{
+			"name": "eğitmenler",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.tobeto.com"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "accept-language",
+						"value": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
+					},
+					{
+						"key": "origin",
+						"value": "https://tobeto.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://tobeto.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+					}
+				],
+				"url": {
+					"raw": "https://api.tobeto.com/api/instructor-lists",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tobeto",
+						"com"
+					],
+					"path": [
+						"api",
+						"instructor-lists"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dersler",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.tobeto.com"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTUzMDksImlhdCI6MTcwOTMxOTE0MSwiZXhwIjoxNzA5NDkxOTQxfQ.J4qEewrB3kyXfPrZxOAey2Gvmdbkn5qA4V7Wqkgw66c"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://tobeto.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://tobeto.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"data\":{\"path\":\"ders\"}}"
+				},
+				"url": {
+					"raw": "https://api.tobeto.com/api/course/general-calender",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tobeto",
+						"com"
+					],
+					"path": [
+						"api",
+						"course",
+						"general-calender"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

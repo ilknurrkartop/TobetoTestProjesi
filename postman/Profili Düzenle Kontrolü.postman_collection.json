@@ -1,0 +1,2255 @@
+{
+	"info": {
+		"_postman_id": "3ab7373c-5876-4dc0-bd35-0c6b19d92b78",
+		"name": "8.Test Senaryosu Adı: Profili Düzenle Kontrolü",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32414147"
+	},
+	"item": [
+		{
+			"name": "Profili Düzenle Sayfası Kontrolü",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.tobeto.com"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "accept-language",
+						"value": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTI0ODIsImlhdCI6MTcwOTEwMjkzMywiZXhwIjoxNzA5Mjc1NzMzfQ.A75o6crW-frjdKFVF7Rp9KrXKofRxhK_SWQJaKWCZLk"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://tobeto.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://tobeto.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"data\":{\"name\":\"İlknur\",\"surname\":\"Kartop\",\"identityNumber\":\"27397323376\",\"year\":\"1997\"}}"
+				},
+				"url": {
+					"raw": "https://api.tobeto.com/api/user-profile/identity-number",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tobeto",
+						"com"
+					],
+					"path": [
+						"api",
+						"user-profile",
+						"identity-number"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bilgileri düzenle",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.tobeto.com"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "accept-language",
+						"value": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTI0ODIsImlhdCI6MTcwOTEwMjkzMywiZXhwIjoxNzA5Mjc1NzMzfQ.A75o6crW-frjdKFVF7Rp9KrXKofRxhK_SWQJaKWCZLk"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://tobeto.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://tobeto.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"data\":{\"name\":\"İlknur\",\"surname\":\"Kartop\",\"phoneNumber\":\"+905079620714\",\"identifier\":\"27397323376\",\"birthday\":\"1997-07-16\",\"address\":\"Battalgazi Mahallesi 1228.Sokak No:5/8\",\"description\":\"Bilgisayar m^ühendisli^ği b^öl^üm^ünden 2022 y^ıl^ında mezun oldum. Mezun olduktan sonra Wissen Akademie'de projeler ^üzerinde ^çal^ı^şarak C^#, ASP.NET MVC, SQL Server, HTML, CSS ve JavaScript e^ğitimlerini ald^ım. Daha sonras^ında ^İstanbul Kodluyor arac^ıl^ı^ğ^ı ile Yaz^ıl^ım Kalite ve Test e^ğitimi almaktay^ım.\",\"city\":9,\"district\":1028,\"country\":\"Türkiye\"}}"
+				},
+				"url": {
+					"raw": "https://api.tobeto.com/api/user-profile/add-or-update",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tobeto",
+						"com"
+					],
+					"path": [
+						"api",
+						"user-profile",
+						"add-or-update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deneyimlerim Sayfası Başarısız Giriş Kontrolü",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.tobeto.com"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "accept-language",
+						"value": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTI0ODIsImlhdCI6MTcwODUyMDI4OSwiZXhwIjoxNzA4NjkzMDg5fQ.wNwJX5pu56E1KpXWYA3Hobsehkmxpp1gYVjNCVaQv7Y"
+					},
+					{
+						"key": "content-length",
+						"value": "0"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://tobeto.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://tobeto.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+					}
+				],
+				"url": {
+					"raw": "https://api.tobeto.com/api/organization/istka-control",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tobeto",
+						"com"
+					],
+					"path": [
+						"api",
+						"organization",
+						"istka-control"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deneyimlerim Sayfası Boş Alan Kontrolü",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.tobeto.com"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "accept-language",
+						"value": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTI0ODIsImlhdCI6MTcwODUyMDI4OSwiZXhwIjoxNzA4NjkzMDg5fQ.wNwJX5pu56E1KpXWYA3Hobsehkmxpp1gYVjNCVaQv7Y"
+					},
+					{
+						"key": "content-length",
+						"value": "0"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://tobeto.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://tobeto.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+					}
+				],
+				"url": {
+					"raw": "https://api.tobeto.com/api/organization/istka-control",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tobeto",
+						"com"
+					],
+					"path": [
+						"api",
+						"organization",
+						"istka-control"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deneyimlerim Sayfası Başarılı Giriş Kontrolü",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.tobeto.com"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTI0ODIsImlhdCI6MTcwOTEwMjkzMywiZXhwIjoxNzA5Mjc1NzMzfQ.A75o6crW-frjdKFVF7Rp9KrXKofRxhK_SWQJaKWCZLk"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://tobeto.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://tobeto.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"data\":{\"corporationName\":\"Kampüs 365\",\"position\":\"Front-end Developer\",\"sector\":\"Yazılım\",\"country\":\"Afyonkarahisar\",\"StartDate\":\"2024-02-16T00:00:00+03:00\",\"EndDate\":\"2024-02-16T00:00:00+03:00\",\"description\":\"asdfghjn\"}}"
+				},
+				"url": {
+					"raw": "https://api.tobeto.com/api/experiences",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tobeto",
+						"com"
+					],
+					"path": [
+						"api",
+						"experiences"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deneyimlerim Deneyim Ekleme  Kontrolü",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.tobeto.com"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "accept-language",
+						"value": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTI0ODIsImlhdCI6MTcwOTEwMjkzMywiZXhwIjoxNzA5Mjc1NzMzfQ.A75o6crW-frjdKFVF7Rp9KrXKofRxhK_SWQJaKWCZLk"
+					},
+					{
+						"key": "origin",
+						"value": "https://tobeto.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://tobeto.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+					}
+				],
+				"url": {
+					"raw": "https://api.tobeto.com/api/experience/my",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tobeto",
+						"com"
+					],
+					"path": [
+						"api",
+						"experience",
+						"my"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deneyimlerim “Çalışmaya devam ediyorum “ Kontrolü",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.tobeto.com"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTI0ODIsImlhdCI6MTcwOTEwMjkzMywiZXhwIjoxNzA5Mjc1NzMzfQ.A75o6crW-frjdKFVF7Rp9KrXKofRxhK_SWQJaKWCZLk"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://tobeto.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://tobeto.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"data\":{\"corporationName\":\"Kampüs 365\",\"position\":\"Front-end Developer\",\"sector\":\"Yazılım\",\"country\":\"Afyonkarahisar\",\"StartDate\":\"2024-02-15T00:00:00+03:00\",\"EndDate\":null,\"description\":\"\"}}"
+				},
+				"url": {
+					"raw": "https://api.tobeto.com/api/experiences",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tobeto",
+						"com"
+					],
+					"path": [
+						"api",
+						"experiences"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eğitim Hayatım Sayfası Boş Alan Kontrolü Kontrolü",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.tobeto.com"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "accept-language",
+						"value": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTI0ODIsImlhdCI6MTcwODUyMDI4OSwiZXhwIjoxNzA4NjkzMDg5fQ.wNwJX5pu56E1KpXWYA3Hobsehkmxpp1gYVjNCVaQv7Y"
+					},
+					{
+						"key": "content-length",
+						"value": "0"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://tobeto.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://tobeto.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+					}
+				],
+				"url": {
+					"raw": "https://api.tobeto.com/api/organization/istka-control",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tobeto",
+						"com"
+					],
+					"path": [
+						"api",
+						"organization",
+						"istka-control"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eğitim Hayatım Sayfası Başarılı Giriş Kontrolü",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.tobeto.com"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTI0ODIsImlhdCI6MTcwOTEwMjkzMywiZXhwIjoxNzA5Mjc1NzMzfQ.A75o6crW-frjdKFVF7Rp9KrXKofRxhK_SWQJaKWCZLk"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://tobeto.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://tobeto.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"data\":{\"University\":\"Kampüs 365\",\"Department\":\"Yazılım\",\"Language\":\"Türkçe\",\"StartDate\":\"2019\",\"EducationStatus\":\"Lisans\",\"EndDate\":\"2023\"}}"
+				},
+				"url": {
+					"raw": "https://api.tobeto.com/api/educations",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tobeto",
+						"com"
+					],
+					"path": [
+						"api",
+						"educations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Yetkinliklerim",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.tobeto.com"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "accept-language",
+						"value": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTI0ODIsImlhdCI6MTcwODUyMDI4OSwiZXhwIjoxNzA4NjkzMDg5fQ.wNwJX5pu56E1KpXWYA3Hobsehkmxpp1gYVjNCVaQv7Y"
+					},
+					{
+						"key": "origin",
+						"value": "https://tobeto.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://tobeto.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+					}
+				],
+				"url": {
+					"raw": "https://api.tobeto.com/api/user-skills",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tobeto",
+						"com"
+					],
+					"path": [
+						"api",
+						"user-skills"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Yetkinliklerim Sayfası Boş Alan Kontrolü",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.tobeto.com"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "accept-language",
+						"value": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTI0ODIsImlhdCI6MTcwODUyMDI4OSwiZXhwIjoxNzA4NjkzMDg5fQ.wNwJX5pu56E1KpXWYA3Hobsehkmxpp1gYVjNCVaQv7Y"
+					},
+					{
+						"key": "content-length",
+						"value": "0"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://tobeto.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://tobeto.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+					}
+				],
+				"url": {
+					"raw": "https://api.tobeto.com/api/organization/istka-control",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tobeto",
+						"com"
+					],
+					"path": [
+						"api",
+						"organization",
+						"istka-control"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Yetkinliklerim Sayfası Başarılı Giriş Kontrolü",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.tobeto.com"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "accept-language",
+						"value": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTI0ODIsImlhdCI6MTcwOTEwMjkzMywiZXhwIjoxNzA5Mjc1NzMzfQ.A75o6crW-frjdKFVF7Rp9KrXKofRxhK_SWQJaKWCZLk"
+					},
+					{
+						"key": "origin",
+						"value": "https://tobeto.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://tobeto.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+					}
+				],
+				"url": {
+					"raw": "https://api.tobeto.com/api/user-skills",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tobeto",
+						"com"
+					],
+					"path": [
+						"api",
+						"user-skills"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Yetkinliklerim Sayfası Yetkinlik Silme Kontrolü",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.tobeto.com"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "accept-language",
+						"value": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTI0ODIsImlhdCI6MTcwOTEwMjkzMywiZXhwIjoxNzA5Mjc1NzMzfQ.A75o6crW-frjdKFVF7Rp9KrXKofRxhK_SWQJaKWCZLk"
+					},
+					{
+						"key": "origin",
+						"value": "https://tobeto.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://tobeto.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+					}
+				],
+				"url": {
+					"raw": "https://api.tobeto.com/api/user-skills/449",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tobeto",
+						"com"
+					],
+					"path": [
+						"api",
+						"user-skills",
+						"449"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sertifikalarım Sayfası Sertifika Yükleme Kontrolü",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.tobeto.com"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "accept-language",
+						"value": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTI0ODIsImlhdCI6MTcwOTEwMjkzMywiZXhwIjoxNzA5Mjc1NzMzfQ.A75o6crW-frjdKFVF7Rp9KrXKofRxhK_SWQJaKWCZLk"
+					},
+					{
+						"key": "origin",
+						"value": "https://tobeto.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://tobeto.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+					}
+				],
+				"url": {
+					"raw": "https://api.tobeto.com/api/user-certificate/list/1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tobeto",
+						"com"
+					],
+					"path": [
+						"api",
+						"user-certificate",
+						"list",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sertifikalarım Sayfası Sertifika Silme Kontrolü",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Referer",
+						"value": "https://tobeto.com/"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTI0ODIsImlhdCI6MTcwOTEwMjkzMywiZXhwIjoxNzA5Mjc1NzMzfQ.A75o6crW-frjdKFVF7Rp9KrXKofRxhK_SWQJaKWCZLk"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"data\":{\"folderType\":\"user-certificate\",\"fileFormat\":\"image/png\",\"certificateId\":4218,\"key\":\"b9e142a6-7160-45a6-9b33-938b3438777b\"}}"
+				},
+				"url": {
+					"raw": "https://api.tobeto.com/api/user-profile/tobeto-private-delete-file",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tobeto",
+						"com"
+					],
+					"path": [
+						"api",
+						"user-profile",
+						"tobeto-private-delete-file"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Medya Hesaplarım Sayfası Boş Alan Kontrolü",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.tobeto.com"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "accept-language",
+						"value": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTI0ODIsImlhdCI6MTcwODUyMDI4OSwiZXhwIjoxNzA4NjkzMDg5fQ.wNwJX5pu56E1KpXWYA3Hobsehkmxpp1gYVjNCVaQv7Y"
+					},
+					{
+						"key": "content-length",
+						"value": "0"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://tobeto.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://tobeto.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+					}
+				],
+				"url": {
+					"raw": "https://api.tobeto.com/api/organization/istka-control",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tobeto",
+						"com"
+					],
+					"path": [
+						"api",
+						"organization",
+						"istka-control"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Medya Hesaplarım Sayfası Başarılı Giriş Kontrolü sosyal medya",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.tobeto.com"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "accept-language",
+						"value": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTI0ODIsImlhdCI6MTcwOTEwMjkzMywiZXhwIjoxNzA5Mjc1NzMzfQ.A75o6crW-frjdKFVF7Rp9KrXKofRxhK_SWQJaKWCZLk"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://tobeto.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://tobeto.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"data\":{\"SocialMediaName\":\"Github\",\"SocialMediaUrl\":\"https://github.com/ilknurrkartop\"}}"
+				},
+				"url": {
+					"raw": "https://api.tobeto.com/api/user-social-medias",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tobeto",
+						"com"
+					],
+					"path": [
+						"api",
+						"user-social-medias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Medya Hesaplarım Sayfası Başarılı Giriş Kontrolü",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.tobeto.com"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "accept-language",
+						"value": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTI0ODIsImlhdCI6MTcwODUyMDI4OSwiZXhwIjoxNzA4NjkzMDg5fQ.wNwJX5pu56E1KpXWYA3Hobsehkmxpp1gYVjNCVaQv7Y"
+					},
+					{
+						"key": "content-length",
+						"value": "0"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://tobeto.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://tobeto.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+					}
+				],
+				"url": {
+					"raw": "https://api.tobeto.com/api/organization/istka-control",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tobeto",
+						"com"
+					],
+					"path": [
+						"api",
+						"organization",
+						"istka-control"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Medya Hesaplarım Sayfası Eşleşmeyen Hesap Ekleme Kontrolü",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.tobeto.com"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "accept-language",
+						"value": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTI0ODIsImlhdCI6MTcwOTEwMjkzMywiZXhwIjoxNzA5Mjc1NzMzfQ.A75o6crW-frjdKFVF7Rp9KrXKofRxhK_SWQJaKWCZLk"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://tobeto.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://tobeto.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"data\":{\"SocialMediaName\":\"LinkedIn\",\"SocialMediaUrl\":\"www.linkedin.com/in/ilknur-kartop\"}}"
+				},
+				"url": {
+					"raw": "https://api.tobeto.com/api/user-social-medias",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tobeto",
+						"com"
+					],
+					"path": [
+						"api",
+						"user-social-medias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Medya Hesaplarım Sayfası Güncelleme Kontrolü",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Medya Hesaplarım Silme Kontrolü",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.tobeto.com"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "accept-language",
+						"value": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTI0ODIsImlhdCI6MTcwOTIwMDU4NiwiZXhwIjoxNzA5MzczMzg2fQ.3NHJCD4S5sXp8tn0JAwKUhcryQTUzELLlsQDOk9KeuA"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://tobeto.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://tobeto.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+					}
+				],
+				"url": {
+					"raw": "https://api.tobeto.com/api/user-social-medias/4124",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tobeto",
+						"com"
+					],
+					"path": [
+						"api",
+						"user-social-medias",
+						"4124"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Yabancı Dillerim Boş Alan  Kontrolü",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.tobeto.com"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "accept-language",
+						"value": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTI0ODIsImlhdCI6MTcwODUyMDI4OSwiZXhwIjoxNzA4NjkzMDg5fQ.wNwJX5pu56E1KpXWYA3Hobsehkmxpp1gYVjNCVaQv7Y"
+					},
+					{
+						"key": "content-length",
+						"value": "0"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://tobeto.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://tobeto.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+					}
+				],
+				"url": {
+					"raw": "https://api.tobeto.com/api/organization/istka-control",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tobeto",
+						"com"
+					],
+					"path": [
+						"api",
+						"organization",
+						"istka-control"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Yabancı Dillerim Başarılı Giriş  Kontrolü",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.tobeto.com"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTI0ODIsImlhdCI6MTcwOTIwMDU4NiwiZXhwIjoxNzA5MzczMzg2fQ.3NHJCD4S5sXp8tn0JAwKUhcryQTUzELLlsQDOk9KeuA"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://tobeto.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://tobeto.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"data\":{\"Language\":\"5\",\"Proficiency\":\"Temel Seviye ( A1 , A2)\"}}"
+				},
+				"url": {
+					"raw": "https://api.tobeto.com/api/user-foreign-languages",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tobeto",
+						"com"
+					],
+					"path": [
+						"api",
+						"user-foreign-languages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Yabancı Dillerim Silme İşlemi Kontrolü",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.tobeto.com"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "accept-language",
+						"value": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTI0ODIsImlhdCI6MTcwOTIwMDU4NiwiZXhwIjoxNzA5MzczMzg2fQ.3NHJCD4S5sXp8tn0JAwKUhcryQTUzELLlsQDOk9KeuA"
+					},
+					{
+						"key": "origin",
+						"value": "https://tobeto.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://tobeto.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+					}
+				],
+				"url": {
+					"raw": "https://api.tobeto.com/api/user-foreign-languages/4891",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tobeto",
+						"com"
+					],
+					"path": [
+						"api",
+						"user-foreign-languages",
+						"4891"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ayarlar Sayfası Boş Alan Kontrolü",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.tobeto.com"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "accept-language",
+						"value": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTI0ODIsImlhdCI6MTcwODUyMDI4OSwiZXhwIjoxNzA4NjkzMDg5fQ.wNwJX5pu56E1KpXWYA3Hobsehkmxpp1gYVjNCVaQv7Y"
+					},
+					{
+						"key": "content-length",
+						"value": "0"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://tobeto.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://tobeto.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+					}
+				],
+				"url": {
+					"raw": "https://api.tobeto.com/api/organization/istka-control",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tobeto",
+						"com"
+					],
+					"path": [
+						"api",
+						"organization",
+						"istka-control"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ayarlar Sayfası Başarısız Şifre Değiştirme Kontrolü",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.tobeto.com"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTI0ODIsImlhdCI6MTcwODUyMDI4OSwiZXhwIjoxNzA4NjkzMDg5fQ.wNwJX5pu56E1KpXWYA3Hobsehkmxpp1gYVjNCVaQv7Y"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://tobeto.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://tobeto.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"currentPassword\":\"ilknur1234\",\"password\":\"ilknur1234\",\"passwordConfirmation\":\"ilknur1234\"}"
+				},
+				"url": {
+					"raw": "https://api.tobeto.com/api/auth/change-password",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tobeto",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"change-password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ayarlar Sayfası Başarılı Şifre Değiştirme Kontrolü",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.tobeto.com"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTI0ODIsImlhdCI6MTcwOTIwMDU4NiwiZXhwIjoxNzA5MzczMzg2fQ.3NHJCD4S5sXp8tn0JAwKUhcryQTUzELLlsQDOk9KeuA"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://tobeto.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://tobeto.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"currentPassword\":\"ilknur1234*\",\"password\":\"ilknur123*\",\"passwordConfirmation\":\"ilknur123*\"}"
+				},
+				"url": {
+					"raw": "https://api.tobeto.com/api/auth/change-password",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tobeto",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"change-password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Şifredeğişikliği",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.tobeto.com"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTI0ODIsImlhdCI6MTcwODUyMDI4OSwiZXhwIjoxNzA4NjkzMDg5fQ.wNwJX5pu56E1KpXWYA3Hobsehkmxpp1gYVjNCVaQv7Y"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://tobeto.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://tobeto.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"currentPassword\":\"ilknur1234\",\"password\":\"ilknur1234*\",\"passwordConfirmation\":\"ilknur1234*\"}"
+				},
+				"url": {
+					"raw": "https://api.tobeto.com/api/auth/change-password",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tobeto",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"change-password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ayarlar Sayfası Üyeliği Sonlandırma Kontrolü",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.tobeto.com"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "accept-language",
+						"value": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTI0ODIsImlhdCI6MTcwODUyMDI4OSwiZXhwIjoxNzA4NjkzMDg5fQ.wNwJX5pu56E1KpXWYA3Hobsehkmxpp1gYVjNCVaQv7Y"
+					},
+					{
+						"key": "content-length",
+						"value": "0"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://tobeto.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://tobeto.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+					}
+				],
+				"url": {
+					"raw": "https://api.tobeto.com/api/organization/istka-control",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tobeto",
+						"com"
+					],
+					"path": [
+						"api",
+						"organization",
+						"istka-control"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
